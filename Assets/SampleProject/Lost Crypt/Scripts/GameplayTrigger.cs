@@ -23,6 +23,7 @@ public class GameplayTrigger : MonoBehaviour
                 enabled = false;
             scene2.SetActive(true);
             scene1.SetActive(false);
+            
         }
     }
 }
