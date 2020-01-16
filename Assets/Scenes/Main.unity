@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.78700006}
-  m_AnchoredPosition: {x: 3, y: 10}
-  m_SizeDelta: {x: -61, y: -63}
+  m_AnchoredPosition: {x: -7.0799866, y: 27.149998}
+  m_SizeDelta: {x: -40.839962, y: -28.699993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8745466
 MonoBehaviour:
@@ -211,7 +211,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Story text
+  m_Text: "\u524D\u9762\u5C31\u662F\u5F71\u5B50\u4E16\u754C\u4E86"
 --- !u!222 &8745468
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -962,7 +962,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e8ab00ef0d9684dcb9deb52811d91218, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec99d406fe9129e429613e736dec17ad, type: 3}
   m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -999,7 +999,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -130.3, y: 553.5}
-  m_SizeDelta: {x: 700, y: 300}
+  m_SizeDelta: {x: 700, y: 223.2}
   m_Pivot: {x: 0, y: 0}
 --- !u!4 &264391988 stripped
 Transform:
@@ -6465,18 +6465,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1287663713}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1085304650}
   m_Father: {fileID: 8745465}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -63.62, y: 38.074993}
-  m_SizeDelta: {x: 46.6, y: 34.3}
+  m_AnchoredPosition: {x: -42, y: 20.9}
+  m_SizeDelta: {x: 25, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1287663715
 MonoBehaviour:
@@ -6517,7 +6517,7 @@ MonoBehaviour:
     m_SelectedTrigger: Highlighted
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1287663716}
+  m_TargetGraphic: {fileID: 1085304651}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -6550,7 +6550,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fdbf9b8d32b2bc443b69a3fa13302dd5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fdff2c2148291a54c925844563f7245d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15968,6 +15968,7 @@ GameObject:
   - component: {fileID: 1777954630}
   - component: {fileID: 1777954634}
   - component: {fileID: 1777954629}
+  - component: {fileID: 1777954635}
   m_Layer: 0
   m_Name: FairyStory
   m_TagString: Untagged
@@ -16044,6 +16045,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1777954630}
   - {fileID: 1777954634}
+  - {fileID: 1777954635}
   suppressAllAutoSelections: 0
 --- !u!114 &1777954632
 MonoBehaviour:
@@ -16071,7 +16073,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1777954631}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1777954635}
   variables: []
   description: 
   stepPause: 0
@@ -16112,6 +16115,33 @@ MonoBehaviour:
   itemId: 3
   indentLevel: 0
   storyText: "\u4F60\u51C6\u5907\u597D\u4E86\u5417"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1777954635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777954628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 4
+  indentLevel: 0
+  storyText: "\u90A3\u5C31\u7EE7\u7EED\u524D\u8FDB\u5427"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -16333,8 +16363,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 289, y: -38.369995}
-  m_SizeDelta: {x: 500, y: 71}
+  m_AnchoredPosition: {x: 308.4, y: 36}
+  m_SizeDelta: {x: 542.1, y: 71}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1855365262
 MonoBehaviour:
@@ -16349,7 +16379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.25882354, g: 0.25490198, b: 0.2627451, a: 1}
+  m_Color: {r: 0.9568628, g: 0.9607844, b: 0.9568628, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -16357,7 +16387,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 65f38658e04ec9e4e95b1dffa27a4bf7, type: 3}
     m_FontSize: 45
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 50
@@ -16509,7 +16539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b85556abd314f3f870c18c013fdcef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickMode: 1
+  clickMode: 3
   nextClickDelay: 0
   cancelEnabled: 1
   ignoreMenuClicks: 1
@@ -16549,7 +16579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTextObject: {fileID: 8745464}
   punchObject: {fileID: 229652480}
-  writingSpeed: 60
+  writingSpeed: 30
   punctuationPause: 0.25
   hiddenTextColor: {r: 1, g: 1, b: 1, a: 0}
   writeWholeWords: 0
@@ -16570,7 +16600,7 @@ MonoBehaviour:
   fadeDuration: 0.25
   continueButton: {fileID: 1287663715}
   dialogCanvas: {fileID: 1860734569}
-  nameText: {fileID: 1855365262}
+  nameText: {fileID: 0}
   nameTextGO: {fileID: 0}
   storyText: {fileID: 8745467}
   storyTextGO: {fileID: 0}
