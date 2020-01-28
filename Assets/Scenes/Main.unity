@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3219,6 +3219,7 @@ GameObject:
   - component: {fileID: 743560573}
   - component: {fileID: 743560575}
   - component: {fileID: 743560574}
+  - component: {fileID: 743560576}
   m_Layer: 0
   m_Name: key
   m_TagString: Untagged
@@ -3320,12 +3321,28 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.033451557, y: 0}
   m_Size: {x: 0.81981564, y: 1.7792969}
   m_Direction: 0
+--- !u!114 &743560576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743560571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d6a9c072743a843ba6c2ded682f195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activatorTag: Player
+  deactivateOnExit: 1
+  objects:
+  - {fileID: 1020771628}
 --- !u!1 &758571333
 GameObject:
   m_ObjectHideFlags: 0
@@ -19055,6 +19072,16 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 82.61563
       objectReference: {fileID: 0}
+    - target: {fileID: 2930869207340061472, guid: 6cfaadcb953af1c448a1b82b94f47442,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -44
+      objectReference: {fileID: 0}
+    - target: {fileID: 2930869207340061472, guid: 6cfaadcb953af1c448a1b82b94f47442,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.9749999
+      objectReference: {fileID: 0}
     - target: {fileID: 4401863854545358129, guid: 6cfaadcb953af1c448a1b82b94f47442,
         type: 3}
       propertyPath: m_DefaultBlend.m_Time
@@ -19073,7 +19100,7 @@ PrefabInstance:
     - target: {fileID: 4401863854545358135, guid: 6cfaadcb953af1c448a1b82b94f47442,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.78743
+      value: -38.863075
       objectReference: {fileID: 0}
     - target: {fileID: 4401863854545358135, guid: 6cfaadcb953af1c448a1b82b94f47442,
         type: 3}
@@ -19217,6 +19244,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436310291255371280, guid: 6cfaadcb953af1c448a1b82b94f47442,
         type: 3}
+      propertyPath: m_Transitions.m_OnCameraLive.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8436310291255371280, guid: 6cfaadcb953af1c448a1b82b94f47442,
+        type: 3}
       propertyPath: m_Lens.FieldOfView
       value: 42
       objectReference: {fileID: 0}
@@ -19225,6 +19257,16 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 927382651}
+    - target: {fileID: 8436310291255371280, guid: 6cfaadcb953af1c448a1b82b94f47442,
+        type: 3}
+      propertyPath: m_Transitions.m_OnCameraLive.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8436310291255371280, guid: 6cfaadcb953af1c448a1b82b94f47442,
+        type: 3}
+      propertyPath: m_Transitions.m_OnCameraLive.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9075130285293123510, guid: 6cfaadcb953af1c448a1b82b94f47442,
         type: 3}
       propertyPath: m_IsActive
