@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Experimental.U2D.Animation;
 using UnityEngine.InputSystem;
@@ -67,8 +68,7 @@ public class CharacterController2D : MonoBehaviour
         animatorGroundedBool = Animator.StringToHash("Grounded");
         animatorRunningSpeed = Animator.StringToHash("RunningSpeed");
         animatorJumpTrigger = Animator.StringToHash("Jump");
-
-        CanMove = true;
+        StartCoroutine(PlayerCanMove(true,4.0f));
     }
 
     void Update()
@@ -241,5 +241,11 @@ public class CharacterController2D : MonoBehaviour
     public void SwapSprites(SpriteLibraryAsset spriteLibraryAsset)
     {
         spriteLibrary.spriteLibraryAsset = spriteLibraryAsset;
+    }
+
+    public IEnumerator PlayerCanMove(bool flag,float time)
+    {
+        yield return new WaitForSeconds(time);
+        CanMove = flag;
     }
 }

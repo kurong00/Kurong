@@ -6,6 +6,7 @@ using Fungus;
 public class SpiriteOnTrigger : MonoBehaviour
 {
     bool nevermeet = true;
+    GameObject player = null;
     void Start()
     {
         
@@ -23,6 +24,14 @@ public class SpiriteOnTrigger : MonoBehaviour
         {
             Flowchart.BroadcastFungusMessage("FairyStory");
             nevermeet = false;
+            player = collision.gameObject;
+            player.GetComponent<CharacterController2D>().CanMove = false;
         }
+    }
+
+    public void PlayerCanMove()
+    {
+        if(player)
+            player.GetComponent<CharacterController2D>().CanMove = true;
     }
 }

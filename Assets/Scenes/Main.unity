@@ -4206,6 +4206,11 @@ PrefabInstance:
       propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 915121624}
+    - target: {fileID: 711633694953692075, guid: 8536eef0a5c281642b45c61fc2f8e7e6,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 752958570778285174, guid: 8536eef0a5c281642b45c61fc2f8e7e6,
         type: 3}
       propertyPath: m_Mesh
@@ -16812,6 +16817,7 @@ GameObject:
   - component: {fileID: 1777954634}
   - component: {fileID: 1777954629}
   - component: {fileID: 1777954635}
+  - component: {fileID: 1777954636}
   m_Layer: 0
   m_Name: FairyStory
   m_TagString: Untagged
@@ -16876,7 +16882,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 65.96907
-    y: 69
+    y: 67.93617
     width: 120
     height: 40
   tint: {r: 1, g: 0.9532509, b: 0, a: 1}
@@ -16889,6 +16895,7 @@ MonoBehaviour:
   - {fileID: 1777954630}
   - {fileID: 1777954634}
   - {fileID: 1777954635}
+  - {fileID: 1777954636}
   suppressAllAutoSelections: 0
 --- !u!114 &1777954632
 MonoBehaviour:
@@ -16914,8 +16921,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1777954631}
+  selectedCommands:
+  - {fileID: 1777954636}
   variables: []
   description: 
   stepPause: 0
@@ -16995,6 +17004,34 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1777954636
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777954628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1982029220}
+  targetComponentAssemblyName: SpiriteOnTrigger, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: SpiriteOnTrigger
+  targetMethod: PlayerCanMove
+  targetMethodText: 'PlayerCanMove (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!43 &1791983271
 Mesh:
   m_ObjectHideFlags: 0
@@ -18534,7 +18571,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.3493929, y: 0.10562968}
+  m_Offset: {x: 0.75492096, y: 0.10562968}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -18545,7 +18582,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.788824, y: 2.9512591}
+  m_Size: {x: 2.9819336, y: 2.9512591}
   m_EdgeRadius: 0
 --- !u!114 &1982029224
 MonoBehaviour:
@@ -19131,7 +19168,7 @@ PrefabInstance:
     - target: {fileID: 4401863854545358135, guid: 6cfaadcb953af1c448a1b82b94f47442,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -41.345654
+      value: -40.343998
       objectReference: {fileID: 0}
     - target: {fileID: 4401863854545358135, guid: 6cfaadcb953af1c448a1b82b94f47442,
         type: 3}
@@ -19256,7 +19293,7 @@ PrefabInstance:
     - target: {fileID: 4401863856463068224, guid: 6cfaadcb953af1c448a1b82b94f47442,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.49
+      value: -53.78
       objectReference: {fileID: 0}
     - target: {fileID: 4401863856463068226, guid: 6cfaadcb953af1c448a1b82b94f47442,
         type: 3}
@@ -20618,6 +20655,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2132969809743495753, guid: cf105c35f94aaa9439582c5463ed295f,
+        type: 3}
+      propertyPath: m_PointLightInnerAngle
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132969809743495753, guid: cf105c35f94aaa9439582c5463ed295f,
+        type: 3}
+      propertyPath: m_PointLightOuterAngle
+      value: 360
+      objectReference: {fileID: 0}
     - target: {fileID: 2683259936127801925, guid: cf105c35f94aaa9439582c5463ed295f,
         type: 3}
       propertyPath: m_IsActive
@@ -20701,12 +20748,12 @@ PrefabInstance:
     - target: {fileID: 6565694876376279970, guid: cf105c35f94aaa9439582c5463ed295f,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0.19016623
+      value: 0.04798436
       objectReference: {fileID: 0}
     - target: {fileID: 6565694876376279970, guid: cf105c35f94aaa9439582c5463ed295f,
         type: 3}
       propertyPath: m_Size.x
-      value: 9.524942
+      value: 3.760333
       objectReference: {fileID: 0}
     - target: {fileID: 6565694876376279970, guid: cf105c35f94aaa9439582c5463ed295f,
         type: 3}
@@ -20721,17 +20768,47 @@ PrefabInstance:
     - target: {fileID: 6565694876376279970, guid: cf105c35f94aaa9439582c5463ed295f,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6565694876376279970, guid: cf105c35f94aaa9439582c5463ed295f,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6588457135370041033, guid: cf105c35f94aaa9439582c5463ed295f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417584575243496465, guid: cf105c35f94aaa9439582c5463ed295f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417584575243496465, guid: cf105c35f94aaa9439582c5463ed295f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417584575243496465, guid: cf105c35f94aaa9439582c5463ed295f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7804258446783860775, guid: cf105c35f94aaa9439582c5463ed295f,
+        type: 3}
+      propertyPath: m_PointLightInnerAngle
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 7804258446783860775, guid: cf105c35f94aaa9439582c5463ed295f,
+        type: 3}
+      propertyPath: m_PointLightOuterAngle
+      value: 360
+      objectReference: {fileID: 0}
     - target: {fileID: 8983957408384929710, guid: cf105c35f94aaa9439582c5463ed295f,
         type: 3}
       propertyPath: valueName
-      value: _SourceVector
+      value: _SourcePosition
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf105c35f94aaa9439582c5463ed295f, type: 3}
