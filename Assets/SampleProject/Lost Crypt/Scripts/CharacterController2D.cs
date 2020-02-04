@@ -141,7 +141,7 @@ public class CharacterController2D : MonoBehaviour
         animator.SetFloat(animatorRunningSpeed, horizontalSpeedNormalized);
 
         // Play audio
-        audioPlayer.PlaySteps(groundType, horizontalSpeedNormalized);
+        if(audioPlayer) audioPlayer.PlaySteps(groundType, horizontalSpeedNormalized);
     }
 
     private void UpdateJump()
@@ -166,7 +166,7 @@ public class CharacterController2D : MonoBehaviour
             isJumping = true;
 
             // Play audio
-            audioPlayer.PlayJump();
+            if(audioPlayer) audioPlayer.PlayJump();
         }
 
         // Landed
@@ -184,7 +184,7 @@ public class CharacterController2D : MonoBehaviour
             isFalling = false;
 
             // Play audio
-            audioPlayer.PlayLanding(groundType);
+            if(audioPlayer) audioPlayer.PlayLanding(groundType);
         }
     }
 
