@@ -7,6 +7,7 @@ public class ShadowOnTrigger : MonoBehaviour
 {
     GameObject player = null;
     GameObject shadow = null;
+
     void Start()
     {
 
@@ -24,7 +25,8 @@ public class ShadowOnTrigger : MonoBehaviour
         {
             player = collision.gameObject;
             player.GetComponent<CharacterController2D>().CanMove = false;
-            Flowchart.BroadcastFungusMessage("ShadowStory");
+            if(gameObject.name== "key_first") Flowchart.BroadcastFungusMessage("ShadowStory");
+            else if (gameObject.name == "key_last") Flowchart.BroadcastFungusMessage("GetShadowStory");
         }
     }
     public void CreateShadow()
@@ -34,13 +36,9 @@ public class ShadowOnTrigger : MonoBehaviour
         shadow.transform.localPosition = new Vector3(-1, -1, 0);
     }
 
-    public void DestroyShadow()
+    public void DestroyGameObject()
     {
-        if (shadow)
-        {
-            Destroy(shadow);
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 
     public void PlayerCanMove()
