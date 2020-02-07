@@ -4706,7 +4706,7 @@ PrefabInstance:
     - target: {fileID: 711633694953692075, guid: 8536eef0a5c281642b45c61fc2f8e7e6,
         type: 3}
       propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 752958570778285174, guid: 8536eef0a5c281642b45c61fc2f8e7e6,
         type: 3}
@@ -22447,6 +22447,16 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[19].key
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4233726996481882087, guid: a53eb50e4fa4a424ba69f5d4e65eed4c,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[20].key
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4233726996481882087, guid: a53eb50e4fa4a424ba69f5d4e65eed4c,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[20].value
+      value: 
+      objectReference: {fileID: 927382649}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a53eb50e4fa4a424ba69f5d4e65eed4c, type: 3}
 --- !u!1001 &4639193256775557093
