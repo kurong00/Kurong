@@ -1284,8 +1284,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 4.5292797, y: -1.7885033}
-  m_Size: {x: 3.346608, y: 1.2322373}
+  m_Offset: {x: 4.554229, y: -1.9016224}
+  m_Size: {x: 3.396514, y: 1.0060105}
   m_Direction: 1
 --- !u!1 &229652480
 GameObject:
@@ -1626,6 +1626,53 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 927382648}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &309053651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 309053652}
+  - component: {fileID: 309053653}
+  m_Layer: 9
+  m_Name: Ruins - 3 (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &309053652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309053651}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 73.17, y: 15.88, z: 0}
+  m_LocalScale: {x: 1.6250104, y: 1.6250104, z: 1.6250104}
+  m_Children: []
+  m_Father: {fileID: 840767899}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &309053653
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309053651}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.7341619, y: -2.3088446}
+  m_Size: {x: 1.1002605, y: 0.5761739}
+  m_Direction: 1
 --- !u!43 &324979615
 Mesh:
   m_ObjectHideFlags: 0
@@ -4245,6 +4292,7 @@ Transform:
   - {fileID: 208488085}
   - {fileID: 269349084}
   - {fileID: 1231075547}
+  - {fileID: 309053652}
   m_Father: {fileID: 621335031}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
