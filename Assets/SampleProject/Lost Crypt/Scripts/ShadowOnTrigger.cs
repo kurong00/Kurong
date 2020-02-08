@@ -7,6 +7,9 @@ public class ShadowOnTrigger : MonoBehaviour
 {
     GameObject player = null;
     GameObject shadow = null;
+    public GameObject cameraGate = null;
+    public GameObject effect = null;
+    public GameObject gate = null;
 
     void Start()
     {
@@ -38,12 +41,39 @@ public class ShadowOnTrigger : MonoBehaviour
 
     public void DestroyGameObject()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
     public void PlayerCanMove()
     {
         if (player)
             player.GetComponent<CharacterController2D>().CanMove = true;
+    }
+
+    public void ShowCamera()
+    {
+        if (cameraGate)
+        { cameraGate.SetActive(true);}
+    }
+
+    public void DeleteGate()
+    {
+        if (gate)
+        {
+            effect.GetComponent<ParticleSystem>().Play() ;
+            StartCoroutine(DestroyGate());
+        }
+    }
+    public IEnumerator DestroyGate()
+    {
+        yield return new WaitForSeconds(3);
+        Debug.Log("vvv");
+        Destroy(gate);
+    }
+
+    public void DeleteCamera()
+    {
+        if (cameraGate)
+            cameraGate.SetActive(false);
     }
 }
