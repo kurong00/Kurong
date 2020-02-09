@@ -3244,7 +3244,6 @@ GameObject:
   - component: {fileID: 5620915551313797799}
   - component: {fileID: 5620915551313797784}
   - component: {fileID: 5620915551313797785}
-  - component: {fileID: 5620915551313797786}
   - component: {fileID: 5620915551313797787}
   m_Layer: 10
   m_Name: Shadow
@@ -3306,33 +3305,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.875}
   m_Size: {x: 0.5, y: 1.75}
   m_Direction: 0
---- !u!114 &5620915551313797786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5620915551313797789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ec7379ebb24eb1478bb7ad77827756b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 5620915550631161091}
-  puppet: {fileID: 5620915550631161092}
-  audioPlayer: {fileID: 0}
-  tailAnchor: {fileID: 5620915552249008671}
-  tailRigidbody: {fileID: 5620915550304477339}
-  handAnchor: {fileID: 5620915550437600535}
-  spriteLibrary: {fileID: 5620915550631161094}
-  acceleration: 25
-  maxSpeed: 6
-  jumpForce: 13
-  minFlipSpeed: 0.1
-  jumpGravityScale: 1
-  fallGravityScale: 2.5
-  groundedGravityScale: 1
-  resetSpeedOnLand: 0
 --- !u!114 &5620915551313797787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3354,7 +3326,7 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 5620915551313797786}
+        - m_Target: {fileID: 0}
           m_MethodName: GrabItem
           m_Mode: 2
           m_Arguments:
@@ -3367,7 +3339,7 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 5620915551313797786}
+        - m_Target: {fileID: 0}
           m_MethodName: SwapSprites
           m_Mode: 2
           m_Arguments:
@@ -3382,7 +3354,7 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 5620915551313797786}
+        - m_Target: {fileID: 0}
           m_MethodName: set_CanMove
           m_Mode: 6
           m_Arguments:
@@ -3395,7 +3367,7 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 5620915551313797786}
+        - m_Target: {fileID: 0}
           m_MethodName: set_CanMove
           m_Mode: 6
           m_Arguments:

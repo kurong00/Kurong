@@ -60,15 +60,14 @@ public class ShadowOnTrigger : MonoBehaviour
     {
         if (gate)
         {
-            effect.GetComponent<ParticleSystem>().Play() ;
             StartCoroutine(DestroyGate());
         }
     }
     public IEnumerator DestroyGate()
     {
-        yield return new WaitForSeconds(3);
-        Debug.Log("vvv");
+        yield return new WaitForSeconds(4);
         Destroy(gate);
+        effect.GetComponent<ParticleSystem>().Play() ;
     }
 
     public void DeleteCamera()
