@@ -11,17 +11,6 @@ public class ShadowOnTrigger : MonoBehaviour
     public GameObject effect = null;
     public GameObject gate = null;
 
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

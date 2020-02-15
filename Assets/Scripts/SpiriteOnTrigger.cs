@@ -7,17 +7,6 @@ public class SpiriteOnTrigger : MonoBehaviour
 {
     bool nevermeet = true;
     GameObject player = null;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (nevermeet && collision.CompareTag("Player"))
