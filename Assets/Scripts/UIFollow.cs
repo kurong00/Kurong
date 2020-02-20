@@ -10,8 +10,7 @@ public class UIFollow : MonoBehaviour
     RectTransform rectTrans;
     public Vector2 offset;
 
-    // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         Vector2 screenPos = Camera.main.WorldToScreenPoint(worldPos.transform.position);
         rectTrans.position = screenPos + offset;

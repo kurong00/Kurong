@@ -11,13 +11,14 @@ Material:
   m_Shader: {fileID: -6465566751694194690, guid: 032a29e50acf417428a770979950c440,
     type: 3}
   m_ShaderKeywords: _EMISSION _FADING_ON _RECEIVE_SHADOWS_OFF _SOFTPARTICLES_ON
-  m_LightmapFlags: 2
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses:
   - SHADOWCASTER
+  - ALWAYS
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
