@@ -10,13 +10,13 @@ public class UIChangeLight : MonoBehaviour
     {
         if (other.CompareTag("Shadow"))
         {
-            shadowlight.SetActive(true);
+            shadowlight.GetComponent<Animator>().enabled = true;
         }
     }
 
     public void ChangeAngel()
     {
-        angel -= 90;
+        angel += 30;
         gameObject.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angel));
     }
 }
