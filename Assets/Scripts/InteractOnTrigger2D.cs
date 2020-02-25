@@ -6,6 +6,8 @@ public class InteractOnTrigger2D : MonoBehaviour
     public LayerMask layers;
     public UnityEvent OnEnter, OnExit;
     public InventoryController.InventoryChecker[] inventoryChecks;
+    public bool Once;
+    bool meet = false;
 
     protected Collider2D m_Collider;
 
@@ -21,10 +23,15 @@ public class InteractOnTrigger2D : MonoBehaviour
         if (!enabled)
             return;
 
-        if (layers.Contains(other.gameObject))
+        if (Once)
         {
-            ExecuteOnEnter(other);
+            if(!meet&& layers.Contains(other.gameObject)){
+                ExecuteOnEnter(other);
+                meet = true;
+            }
         }
+        else
+            ExecuteOnEnter(other);
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -32,10 +39,15 @@ public class InteractOnTrigger2D : MonoBehaviour
         if (!enabled)
             return;
 
-        if (layers.Contains(other.gameObject))
+        if (Once)
         {
-            ExecuteOnExit(other);
+            if (!meet && layers.Contains(other.gameObject)){
+                ExecuteOnExit(other);
+                meet = true;
+            }
         }
+        else
+            ExecuteOnExit(other);
     }
 
     protected virtual void ExecuteOnEnter(Collider2D other)

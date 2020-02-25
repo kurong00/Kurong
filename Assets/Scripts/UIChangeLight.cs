@@ -16,7 +16,7 @@ public class UIChangeLight : MonoBehaviour
 
     public void ChangeAngel()
     {
-        angel += 90;
+        angel -= 90;
         gameObject.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angel));
     }
 }

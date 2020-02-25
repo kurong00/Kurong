@@ -1494,6 +1494,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   inventoryChecks: []
+  Once: 0
 --- !u!70 &199189422
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2728,6 +2729,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   inventoryChecks: []
+  Once: 1
 --- !u!1 &315133142
 GameObject:
   m_ObjectHideFlags: 0
@@ -9894,7 +9896,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1038922373
 Transform:
   m_ObjectHideFlags: 0
@@ -20874,7 +20876,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -97
+  m_SortingOrder: -60
   m_Sprite: {fileID: 21300000, guid: 47b428b699457b74992fad3070540648, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
