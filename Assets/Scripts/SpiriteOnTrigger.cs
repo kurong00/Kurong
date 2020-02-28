@@ -15,6 +15,7 @@ public class SpiriteOnTrigger : MonoBehaviour
             nevermeet = false;
             player = collision.gameObject;
             player.GetComponent<CharacterController2D>().CanMove = false;
+            gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
         }
     }
 

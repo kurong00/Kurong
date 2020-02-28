@@ -5,14 +5,6 @@ using UnityEngine;
 public class UIChangeLight : MonoBehaviour
 {
     float angel = 0f;
-    public GameObject shadowlight;
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Shadow"))
-        {
-            shadowlight.GetComponent<Animator>().enabled = true;
-        }
-    }
 
     public void ChangeAngel()
     {
